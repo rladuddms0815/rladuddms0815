@@ -1,24 +1,34 @@
-name: GitHub-Profile-3D-Contrib
+name: GitHub Profile 3D Grass
 
 on:
-  schedule: # 03:00 JST == 18:00 UTC
-    - cron: "0 18 * * *"
-  workflow_dispatch:
+  schedule:
+    - cron: '0 * * * *'  # 매 시간마다 실행
+  workflow_dispatch:     # 수동 실행 가능
 
 jobs:
-  build:
+  update-grass:
     runs-on: ubuntu-latest
-    name: generate-github-profile-3d-contrib
+
     steps:
-      - uses: actions/checkout@v2
-      - uses: yoshi389111/github-profile-3d-contrib@0.6.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
-          USERNAME: ${{ github.repository_owner }}
-      - name: Commit & Push
-        run: |
-          git config user.name rladuddms0815@
-          git config user.email ye100424@gmail.com
-          git add -A .
-          git commit -m "generated"
-          git push
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install github-profile-3d-grass
+
+      - name: Run 3D Grass update
+        run: npx github-profile-3d-grass
+
+      - name: Commit & Push changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: "rladuddms0815"
+          author_email: "ye100424@gmail.com"
+          message: "Update GitHub Profile 3D Grass"
+          push: true
+          token: ${{ secrets.GH_TOKEN }}

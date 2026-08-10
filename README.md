@@ -51,9 +51,7 @@ model Yeongeun {
           "Figma"
         ],
 
-        deployment = [
-          "Bolt"
-        ]
+
       )
     ]
   )

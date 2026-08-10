@@ -1,17 +1,14 @@
 <h1 align="center">Hi, I'm Yeongeun 👋</h1>
 
-<p align="center">
-  Frontend Developer · Building clean and useful web experiences
-</p>
-
 <br>
 
 ## About Me
 
-- 🌱 Currently learning **Frontend Development**
-- 💻 Interested in **Web · UI/UX · AI**
-- 🤝 Learning how to build products through team projects
-- ✨ I like simple, clean and intuitive interfaces
+- 🌱 프론트엔드 개발을 공부하고 있습니다.
+- 💻 웹 개발과 UI/UX에 관심이 있습니다.
+- 🤖 AI를 활용한 웹 서비스에도 관심이 있습니다.
+- 🤝 팀 프로젝트를 통해 협업과 개발 과정을 배우고 있습니다.
+- ✨ 단순하고 사용하기 편한 화면을 좋아합니다.
 
 <br>
 

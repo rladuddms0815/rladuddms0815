@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    src="https://capsule-render.vercel.app/api?type=waving&color=0:FFB6C1,50:FF8FB1,100:FFC0CB&height=220&section=header&text=Hi,%20I'm%20Yeongeun%20👋&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38"
+   src="https://capsule-render.vercel.app/api?type=waving&color=0:FFB6C1,50:FF8FB1,100:FFC0CB&height=220&section=header&text=Yeongeun's%20Dev%20Log&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38"
     width="100%"
   />
 </p>
@@ -27,9 +27,7 @@ model Yeongeun {
   model TechStack {
     frontend   String[]
     ai         String[]
-    features   String[]
     tools      String[]
-    deployment String[]
   }
 
   techStack TechStack[] @default(
@@ -39,14 +37,12 @@ model Yeongeun {
           "React",
           "TypeScript",
           "JavaScript",
-          "Tailwind CSS"
         ],
 
         tools      = [
           "Git",
           "GitHub",
           "VS Code",
-          "Figma"
         ],
 
 

@@ -1,28 +1,66 @@
-<h1 align="center">Hi, I'm Yeongeun 👋</h1>
+<p align="center">
+  <img
+    src="https://capsule-render.vercel.app/api?type=waving&color=0:FFB6C1,50:FF8FB1,100:FFC0CB&height=220&section=header&text=Hi,%20I'm%20Yeongeun%20👋&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38"
+    width="100%"
+  />
+</p>
 
 <br>
 
-## About Me
+## 🌷 About Me
 
-- 🌱 프론트엔드 개발을 공부하고 있습니다.
-- 💻 웹 개발과 UI/UX에 관심이 있습니다.
-- 🤖 AI를 활용한 웹 서비스에도 관심이 있습니다.
-- 🤝 팀 프로젝트를 통해 협업과 개발 과정을 배우고 있습니다.
-- ✨ 단순하고 사용하기 편한 화면을 좋아합니다.
+- 💻 React와 TypeScript를 활용한 웹앱 개발을 경험했습니다.
+- 🎨 사용하기 쉽고 직관적인 UI/UX에 관심이 있습니다.
+- 🤖 Gemini API와 OCR을 활용한 AI 기능을 구현해봤습니다.
+- 📷 카메라 촬영 및 이미지 업로드 기능을 웹 서비스에 적용해봤습니다.
+- 🤝 팀 프로젝트를 통해 협업과 서비스 개발 과정을 배우고 있습니다.
 
 <br>
 
-## Tech Stack
+## 💻 Tech Stack
 
-### Frontend
-<p>
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react" />
-</p>
+```prisma
+model Yeongeun {
+  github    String   @default("rladuddms0815")
+  focus     String   @default("Web & AI")
+  interests String[] @default(["UI/UX", "AI Web Service"])
+  languages String[] @default(["TypeScript", "JavaScript"])
 
-### Tools
-<p>
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,figma" />
-</p>
+  model TechStack {
+    frontend   String[]
+    ai         String[]
+    features   String[]
+    tools      String[]
+    deployment String[]
+  }
+
+  techStack TechStack[] @default(
+    [
+      TechStack(
+        frontend   = [
+          "React",
+          "TypeScript",
+          "JavaScript",
+          "Tailwind CSS"
+        ],
+
+        tools      = [
+          "Git",
+          "GitHub",
+          "VS Code",
+          "Figma"
+        ],
+
+        deployment = [
+          "Bolt"
+        ]
+      )
+    ]
+  )
+}
+```
+
+<br>
 
 ## 🟡 나의 Contributions
 
@@ -38,4 +76,13 @@
       alt="팩맨 contribution graph"
       src="https://raw.githubusercontent.com/rladuddms0815/rladuddms0815/output/pacman-contribution-graph.svg">
   </picture>
+</p>
+
+<br>
+
+<p align="center">
+  <img
+    src="https://capsule-render.vercel.app/api?type=waving&color=0:FFC0CB,50:FF8FB1,100:FFB6C1&height=120&section=footer"
+    width="100%"
+  />
 </p>

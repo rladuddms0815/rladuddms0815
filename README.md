@@ -16,42 +16,14 @@
 <br>
 
 ## 💻 Tech Stack
-
 ```prisma
 model Yeongeun {
-  github    String   @default("rladuddms0815")
-  focus     String   @default("Web & AI")
-  interests String[] @default(["UI/UX", "AI Web Service"])
-  languages String[] @default(["TypeScript", "JavaScript"])
-
-  model TechStack {
-    frontend   String[]
-    ai         String[]
-    tools      String[]
-  }
-
-  techStack TechStack[] @default(
-    [
-      TechStack(
-        frontend   = [
-          "React",
-          "TypeScript",
-          "JavaScript",
-        ],
-
-        tools      = [
-          "Git",
-          "GitHub",
-          "VS Code",
-        ],
-
-
-      )
-    ]
-  )
+  github   String   @default("rladuddms0815")
+  focus    String   @default("Web & AI")
+  stack    String[] @default(["React", "TypeScript", "JavaScript"])
+  tools    String[] @default(["Git", "GitHub", "VS Code"])
 }
 ```
-
 <br>
 
 ## 🟡 나의 Contributions

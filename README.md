@@ -23,3 +23,19 @@
 <p>
   <img src="https://skillicons.dev/icons?i=git,github,vscode,figma" />
 </p>
+
+## 🟡 나의 Contributions
+
+<p align="center">
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://raw.githubusercontent.com/rladuddms0815/rladuddms0815/output/pacman-contribution-graph-dark.svg">
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://raw.githubusercontent.com/rladuddms0815/rladuddms0815/output/pacman-contribution-graph.svg">
+    <img
+      alt="팩맨 contribution graph"
+      src="https://raw.githubusercontent.com/rladuddms0815/rladuddms0815/output/pacman-contribution-graph.svg">
+  </picture>
+</p>
